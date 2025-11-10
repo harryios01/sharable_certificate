@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+}
+
+.certificate {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 1.414 / 1;
+  background: linear-gradient(to bottom, #ffffff 0%, #fdfbf7 100%);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+}
+
+/* Decorative Corners */
+.corner {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-style: solid;
+  border-color: #c9a961;
+}
+
+.corner-tl {
+  top: 20px;
+  left: 20px;
+  border-width: 3px 0 0 3px;
+}
+
+.corner-tr {
+  top: 20px;
+  right: 20px;
+  border-width: 3px 3px 0 0;
+}
+
+.corner-bl {
+  bottom: 20px;
+  left: 20px;
+  border-width: 0 0 3px 3px;
+}
+
+.corner-br {
+  bottom: 20px;
+  right: 20px;
+  border-width: 0 3px 3px 0;
+}
+
+/* Borders */
+.certificate-border {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #c9a961;
+  padding: 15px;
+  position: relative;
+}
+
+.certificate-inner-border {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #c9a961;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(201, 169, 97, 0.03) 2px,
+      rgba(201, 169, 97, 0.03) 4px
+    );
+}
+
+/* Decorative Elements */
+.decorative-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.decorative-element.top {
+  top: -20px;
+}
+
+.decorative-element.bottom {
+  bottom: -20px;
+}
+
+.ornament {
+  background: #fdfbf7;
+  padding: 0 10px;
+}
+
+/* Header */
+.certificate-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.certificate-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.title-underline {
+  width: 200px;
+  height: 3px;
+  background: linear-gradient(to right, transparent, #c9a961, transparent);
+  margin: 15px auto;
+}
+
+.certificate-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #7f8c8d;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+
+/* Body */
+.certificate-body {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.presentation-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #34495e;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.recipient-name {
+  font-family: 'Great Vibes', cursive;
+  font-size: 56px;
+  color: #2c3e50;
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.name-underline {
+  width: 300px;
+  height: 2px;
+  background: #c9a961;
+  margin: 10px auto 30px;
+}
+
+.award-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #c9a961;
+  font-weight: 600;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.description-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 20px auto;
+  font-weight: 300;
+}
+
+/* Footer */
+.certificate-footer {
+  margin-top: 40px;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.signature-block {
+  flex: 1;
+  text-align: center;
+}
+
+.signature-line {
+  width: 180px;
+  height: 1px;
+  background: #2c3e50;
+  margin: 0 auto 10px;
+}
+
+.signature-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #2c3e50;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.date-seal {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seal {
+  margin-bottom: 15px;
+}
+
+.date-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certificate {
+    padding: 20px;
+  }
+
+  .certificate-inner-border {
+    padding: 20px;
+  }
+
+  .certificate-title {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+
+  .certificate-subtitle {
+    font-size: 14px;
+  }
+
+  .recipient-name {
+    font-size: 36px;
+  }
+
+  .award-text {
+    font-size: 18px;
+  }
+
+  .description-text {
+    font-size: 12px;
+  }
+
+  .signature-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .seal svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media print {
+  .certificate-container {
+    background: white;
+    padding: 0;
+  }
+
+  .certificate {
+    box-shadow: none;
+    max-width: 100%;
+  }
+}
