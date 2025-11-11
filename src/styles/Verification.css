@@ -1,0 +1,172 @@
+.verify-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  padding: 60px 20px;
+}
+
+.verification-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.verification-valid, .verification-invalid {
+  text-align: center;
+}
+
+.valid-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto 30px;
+}
+
+.invalid-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto 30px;
+}
+
+.verification-valid h1 {
+  color: #10b981;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.verification-invalid h1 {
+  color: #ef4444;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.verification-subtitle {
+  color: #6b7280;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.verification-details {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.verify-profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verify-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #10b981;
+  object-fit: cover;
+}
+
+.verify-info {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.verify-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.verify-row:last-child {
+  border-bottom: none;
+}
+
+.verify-label {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.verify-value {
+  color: #1f2937;
+  font-weight: 500;
+  text-align: right;
+}
+
+.technology-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.verify-id {
+  font-family: monospace;
+  font-size: 0.9rem;
+  word-break: break-all;
+}
+
+.verify-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-certificate-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.view-certificate-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.loading {
+  text-align: center;
+  padding: 100px 20px;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .verification-container {
+    padding: 30px 20px;
+  }
+
+  .verification-valid h1, .verification-invalid h1 {
+    font-size: 2rem;
+  }
+
+  .verify-row {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .verify-value {
+    text-align: left;
+  }
+}
